@@ -1,0 +1,7 @@
+mutation ApproveLoan($loanId: [String]!) {
+  ApproveLoan(loanId: $loanId) {
+    success
+    message
+    data
+  }
+}

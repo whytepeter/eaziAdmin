@@ -1,0 +1,11 @@
+var c={kind:"Document",definitions:[{kind:"OperationDefinition",operation:"mutation",name:{kind:"Name",value:"EditRole"},variableDefinitions:[{kind:"VariableDefinition",variable:{kind:"Variable",name:{kind:"Name",value:"input"}},type:{kind:"NamedType",name:{kind:"Name",value:"UpdateARoleInput"}},directives:[]}],directives:[],selectionSet:{kind:"SelectionSet",selections:[{kind:"Field",name:{kind:"Name",value:"EditRole"},arguments:[{kind:"Argument",name:{kind:"Name",value:"input"},value:{kind:"Variable",name:{kind:"Name",value:"input"}}}],directives:[],selectionSet:{kind:"SelectionSet",selections:[{kind:"Field",name:{kind:"Name",value:"success"},arguments:[],directives:[]},{kind:"Field",name:{kind:"Name",value:"message"},arguments:[],directives:[]},{kind:"Field",name:{kind:"Name",value:"data"},arguments:[],directives:[],selectionSet:{kind:"SelectionSet",selections:[{kind:"Field",name:{kind:"Name",value:"role"},arguments:[],directives:[]}]}}]}}]}}],loc:{start:0,end:132}};c.loc.source={body:`mutation EditRole($input: UpdateARoleInput) {
+  EditRole(input: $input) {
+    success
+    message
+    data {
+      role
+    }
+  }
+}
+`,name:"GraphQL request",locationOffset:{line:1,column:1}};function d(e,i){if(e.kind==="FragmentSpread")i.add(e.name.value);else if(e.kind==="VariableDefinition"){var n=e.type;n.kind==="NamedType"&&i.add(n.name.value)}e.selectionSet&&e.selectionSet.selections.forEach(function(a){d(a,i)}),e.variableDefinitions&&e.variableDefinitions.forEach(function(a){d(a,i)}),e.definitions&&e.definitions.forEach(function(a){d(a,i)})}var s={};(function(){c.definitions.forEach(function(i){if(i.name){var n=new Set;d(i,n),s[i.name.value]=n}})})();function u(e,i){for(var n=0;n<e.definitions.length;n++){var a=e.definitions[n];if(a.name&&a.name.value==i)return a}}function m(e,i){var n={kind:e.kind,definitions:[u(e,i)]};e.hasOwnProperty("loc")&&(n.loc=e.loc);var a=s[i]||new Set,r=new Set,o=new Set;for(a.forEach(function(t){o.add(t)});o.size>0;){var f=o;o=new Set,f.forEach(function(t){if(!r.has(t)){r.add(t);var l=s[t]||new Set;l.forEach(function(v){o.add(v)})}})}return r.forEach(function(t){var l=u(e,t);l&&n.definitions.push(l)}),n}const k=m(c,"EditRole");export{k as EditRole,c as default};
+//# sourceMappingURL=EditRole-c57472f0.js.map

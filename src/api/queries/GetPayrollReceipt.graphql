@@ -1,0 +1,22 @@
+query GetPayrollReceipt($input: GetPayrollReceiptInput) {
+  GetPayrollReceipt(input: $input) {
+    data {
+      pagination {
+        totalRecords
+        pageTotal
+        hasNextPage
+        hasPrevPage
+      }
+      docs {
+        date
+        status
+        amountPaid
+        emplyeesPaid
+        registrationType
+        pfp
+        logo
+        companyName
+      }
+    }
+  }
+}

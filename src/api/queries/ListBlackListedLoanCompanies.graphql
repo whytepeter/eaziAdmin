@@ -1,0 +1,52 @@
+query ListBlackListedLoanCompanies($sort: JSON) {
+  ListBlackListedLoanCompanies(sort: $sort) {
+    data {
+      count
+      companies {
+        _id
+        company {
+          countryCode
+          companySize
+          companyName
+          website
+          industry
+          employerPensionCode
+          tin
+          address
+          country
+          state
+          email
+          bank {
+            currency
+            bankName
+            accountName
+            accountNumber
+            accountResolved
+            bankCode
+            recipientCode
+            bankAccountType
+          }
+          logo
+        }
+        companyAdmins {
+          _id
+          firstName
+          lastName
+          email
+          pfp
+          phoneNumber
+          countryCode
+          registrationConfirmed
+          twoFactor
+          referralCode
+          referredBy
+          registrationType
+          createdAt
+          updatedAt
+        }
+        registrationType
+        activeAccount
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+query ViewWalletReportSingle($input: ViewWalletReportInputSingle) {
+  ViewWalletReportSingle(input: $input) {
+    transactions {
+      amount
+      transactionType
+      transactionDate
+      description
+      walletBalance
+    }
+    openningBalance
+    closingBalance
+    totalInflow
+    totalOutflow
+  }
+}

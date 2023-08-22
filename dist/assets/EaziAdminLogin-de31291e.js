@@ -1,0 +1,11 @@
+var l={kind:"Document",definitions:[{kind:"OperationDefinition",operation:"mutation",name:{kind:"Name",value:"EaziAdminLogin"},variableDefinitions:[{kind:"VariableDefinition",variable:{kind:"Variable",name:{kind:"Name",value:"input"}},type:{kind:"NamedType",name:{kind:"Name",value:"EaziAdminLoginInput"}},directives:[]}],directives:[],selectionSet:{kind:"SelectionSet",selections:[{kind:"Field",name:{kind:"Name",value:"EaziAdminLogin"},arguments:[{kind:"Argument",name:{kind:"Name",value:"input"},value:{kind:"Variable",name:{kind:"Name",value:"input"}}}],directives:[],selectionSet:{kind:"SelectionSet",selections:[{kind:"Field",name:{kind:"Name",value:"token"},arguments:[],directives:[]},{kind:"Field",name:{kind:"Name",value:"success"},arguments:[],directives:[]},{kind:"Field",name:{kind:"Name",value:"privileges"},arguments:[],directives:[]},{kind:"Field",name:{kind:"Name",value:"data"},arguments:[],directives:[]},{kind:"Field",name:{kind:"Name",value:"returnStatus"},arguments:[],directives:[]}]}}]}}],loc:{start:0,end:158}};l.loc.source={body:`mutation EaziAdminLogin($input: EaziAdminLoginInput) {
+  EaziAdminLogin(input: $input) {
+    token
+    success
+    privileges
+    data
+    returnStatus
+  }
+}
+`,name:"GraphQL request",locationOffset:{line:1,column:1}};function r(i,n){if(i.kind==="FragmentSpread")n.add(i.name.value);else if(i.kind==="VariableDefinition"){var e=i.type;e.kind==="NamedType"&&n.add(e.name.value)}i.selectionSet&&i.selectionSet.selections.forEach(function(a){r(a,n)}),i.variableDefinitions&&i.variableDefinitions.forEach(function(a){r(a,n)}),i.definitions&&i.definitions.forEach(function(a){r(a,n)})}var s={};(function(){l.definitions.forEach(function(n){if(n.name){var e=new Set;r(n,e),s[n.name.value]=e}})})();function c(i,n){for(var e=0;e<i.definitions.length;e++){var a=i.definitions[e];if(a.name&&a.name.value==n)return a}}function v(i,n){var e={kind:i.kind,definitions:[c(i,n)]};i.hasOwnProperty("loc")&&(e.loc=i.loc);var a=s[n]||new Set,u=new Set,d=new Set;for(a.forEach(function(t){d.add(t)});d.size>0;){var f=d;d=new Set,f.forEach(function(t){if(!u.has(t)){u.add(t);var o=s[t]||new Set;o.forEach(function(m){d.add(m)})}})}return u.forEach(function(t){var o=c(i,t);o&&e.definitions.push(o)}),e}const k=v(l,"EaziAdminLogin");export{k as EaziAdminLogin,l as default};
+//# sourceMappingURL=EaziAdminLogin-de31291e.js.map

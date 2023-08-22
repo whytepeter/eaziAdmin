@@ -1,0 +1,2 @@
+import{A as o,c as r,a as c,i as a,j as t,u as s,L as d,m as l,o as i,k as u,T as _}from"./index-351c9552.js";const m={class:"mb-2"},h={__name:"AllTransactions",setup(p){const{data:e}=o("RecentTransactions");return(f,T)=>{const n=l("RouterLink");return i(),r("div",null,[c("div",m,[a(n,{to:{name:"Dashboard"}},{default:t(()=>[u(" Back ")]),_:1})]),a(d,{data:s(e),error:!1},{default:t(()=>[a(_,{data:s(e)},null,8,["data"])]),_:1},8,["data"])])}}};export{h as default};
+//# sourceMappingURL=AllTransactions-dd846868.js.map

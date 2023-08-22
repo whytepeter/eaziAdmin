@@ -1,0 +1,32 @@
+query ListCompanyAdmins($companyId: String) {
+  ListCompanyAdmins(companyId: $companyId) {
+    data {
+      companyAdmins {
+        _id
+        firstName
+        lastName
+        email
+        pfp
+        roles
+        createdAt
+        updatedAt
+        companyAdmin
+        employeeAdmin
+        companyId
+      }
+      employeesWithRoles {
+        _id
+        firstName
+        lastName
+        email
+        pfp
+        roles
+        createdAt
+        updatedAt
+        companyAdmin
+        employeeAdmin
+        companyId
+      }
+    }
+  }
+}

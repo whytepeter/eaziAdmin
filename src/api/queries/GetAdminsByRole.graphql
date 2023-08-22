@@ -1,0 +1,8 @@
+query GetAdminsByRole($input: GetAdminWithARoleInput) {
+  GetAdminsByRole(input: $input) {
+    data {
+      count
+      admins
+    }
+  }
+}

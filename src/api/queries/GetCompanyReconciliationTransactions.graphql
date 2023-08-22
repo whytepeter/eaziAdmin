@@ -1,0 +1,20 @@
+query GetCompanyReconciliationTransactions($input: GetCompanyReconciliationTransactionsInput) {
+  GetCompanyReconciliationTransactions(input: $input) {
+    data {
+      pagination {
+        totalRecords
+        pageTotal
+        hasNextPage
+        hasPrevPage
+      }
+      docs {
+        transactionId
+        amount
+        transactionType
+        createdAt
+        description
+        walletBalance
+      }
+    }
+  }
+}

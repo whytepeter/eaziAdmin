@@ -1,0 +1,7 @@
+mutation BlackListCompanyForLoan($companyId: [String]!, $loanBlackListed: Boolean!) {
+  BlackListCompanyForLoan(companyId: $companyId, loanBlackListed: $loanBlackListed) {
+    success
+    message
+    data
+  }
+}

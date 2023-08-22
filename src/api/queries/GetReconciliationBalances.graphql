@@ -1,0 +1,5 @@
+query GetReconciliationBalances {
+  GetReconciliationBalances {
+    data
+  }
+}

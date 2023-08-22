@@ -1,0 +1,17 @@
+query PayrollDashboard($companyId: String) {
+  PayrollDashboard(companyId: $companyId) {
+    success
+    message
+    data {
+      payrollRecords {
+        employees
+        noOfemployees
+        date
+        amount
+        account
+      }
+      payrollTotals
+    }
+    returnStatus
+  }
+}

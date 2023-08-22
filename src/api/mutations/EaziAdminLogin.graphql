@@ -1,0 +1,9 @@
+mutation EaziAdminLogin($input: EaziAdminLoginInput) {
+  EaziAdminLogin(input: $input) {
+    token
+    success
+    privileges
+    data
+    returnStatus
+  }
+}

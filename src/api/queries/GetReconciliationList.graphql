@@ -1,0 +1,23 @@
+query GetReconciliationList($input: GetReconciliationListInput) {
+  GetReconciliationList(input: $input) {
+    data {
+      docs {
+        _id
+        company
+        logo
+        registrationType
+        pfp
+        totalInflow
+        totalOutflow
+        walletBalance
+        reconciliationValue
+      }
+      pagination {
+        totalRecords
+        pageTotal
+        hasNextPage
+        hasPrevPage
+      }
+    }
+  }
+}

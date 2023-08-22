@@ -1,0 +1,7 @@
+mutation RemoveAnAdminUser($input: GetAnAdminUserInput) {
+  RemoveAnAdminUser(input: $input) {
+    success
+    message
+    data
+  }
+}

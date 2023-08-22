@@ -1,0 +1,11 @@
+query GetRevenueFromCompany($input: GetRevenueFromCompanyInput) {
+  GetRevenueFromCompany(input: $input) {
+    success
+    message
+    returnStatus
+    data {
+      total
+      revenueData
+    }
+  }
+}

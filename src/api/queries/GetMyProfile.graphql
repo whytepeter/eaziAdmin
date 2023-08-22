@@ -1,0 +1,7 @@
+query GetMyProfile {
+  GetMyProfile {
+    data {
+      admin
+    }
+  }
+}

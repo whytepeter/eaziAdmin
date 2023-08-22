@@ -1,0 +1,11 @@
+query GroupReferrals($input: GroupPayrollInput) {
+  GroupReferrals(input: $input) {
+    success
+    message
+    data {
+      companyAdmins
+      total
+    }
+    returnStatus
+  }
+}

@@ -1,0 +1,7 @@
+mutation ClearLoan($loanId: String!) {
+  ClearLoan(loanId: $loanId) {
+    success
+    message
+    data
+  }
+}

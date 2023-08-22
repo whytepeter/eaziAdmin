@@ -1,0 +1,10 @@
+query GetCompanyReconciliationBalances($input: GetCompanyReconciliationBalancesInput) {
+  GetCompanyReconciliationBalances(input: $input) {
+    data {
+      inflow
+      outflow
+      walletBalance
+      reconciliationValue
+    }
+  }
+}

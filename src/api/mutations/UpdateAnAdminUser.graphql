@@ -1,0 +1,7 @@
+mutation UpdateAnAdminUser($input: UpdateAnAdminUserInput) {
+  UpdateAnAdminUser(input: $input) {
+    success
+    data
+    message
+  }
+}

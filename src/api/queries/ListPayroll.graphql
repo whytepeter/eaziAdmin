@@ -1,0 +1,16 @@
+query ListPayroll($input: ListPayrollInput) {
+  ListPayroll(input: $input) {
+    success
+    message
+    data {
+      pagination {
+        totalRecords
+        pageTotal
+        hasNextPage
+        hasPrevPage
+      }
+      docs
+    }
+    returnStatus
+  }
+}

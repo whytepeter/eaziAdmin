@@ -1,0 +1,7 @@
+query GetComplianceReceipt($input: GetComplianceReceiptInput) {
+  GetComplianceReceipt(input: $input) {
+    message
+    success
+    data
+  }
+}

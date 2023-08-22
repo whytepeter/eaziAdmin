@@ -1,0 +1,9 @@
+mutation ConfirmLoginOtp($input: ConfirmOTPInput) {
+  ConfirmLoginOtp(input: $input) {
+    success
+    message
+    token
+    data
+    privileges
+  }
+}

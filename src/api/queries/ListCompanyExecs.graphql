@@ -1,0 +1,35 @@
+query ListCompanyExecs($companyId: String!) {
+  ListCompanyExecs(companyId: $companyId) {
+    data {
+      companyExecs {
+        _id
+        title
+        fullName
+        email
+        phoneNumber
+        address
+        bvn
+        idUrl
+        idType
+        pictureUrl
+        execType
+        role
+        signatureImage
+        personalDocument {
+          interntionlPassport
+          nin
+          videoVerification
+          votersCard {
+            front
+            back
+          }
+          driversLicense {
+            front
+            back
+          }
+          bvn
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+query ListRecentTransactions($input: ListRecentTransactionsInput) {
+  ListRecentTransactions(input: $input) {
+    success
+    message
+    data
+    returnStatus
+  }
+}

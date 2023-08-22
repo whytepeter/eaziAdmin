@@ -1,0 +1,12 @@
+query groupCompanies($input: GroupCompanyInput!) {
+  groupCompanies(input: $input) {
+    success
+    message
+    returnStatus
+    data {
+      total
+      companiesByMonth
+      employeeTotal
+    }
+  }
+}

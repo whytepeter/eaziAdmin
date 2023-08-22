@@ -1,0 +1,60 @@
+.loan-details-card {
+  padding: 20px 40px;
+}
+
+.two-cols {
+  display: flex;
+  width: 100%;
+
+  .col {
+    flex: 1;
+  }
+
+  .cols-seperator {
+    border-right: 1px solid #e7e8e7;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+.info-list-heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.info-list {
+  display: grid;
+  gap: 25px;
+}
+
+.info-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #dddedd;
+}
+
+.loan-purpose {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  div {
+    color: #8b8b8b;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    border: 1px solid #e7e8e7;
+    padding: 10px;
+    border-radius: 8px;
+    min-height: 80px;
+  }
+}
+
+.view-loan-contract {
+  display: flex;
+  justify-content: center;
+  color: #359aa0;
+  margin-top: 40px;
+}

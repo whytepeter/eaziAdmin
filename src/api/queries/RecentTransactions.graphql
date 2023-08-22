@@ -1,0 +1,14 @@
+query RecentTransactions {
+  RecentTransactions {
+    data {
+      company
+      companyLogo
+      noOfStaff
+      subscription
+      type
+      amount
+      date
+      status
+    }
+  }
+}

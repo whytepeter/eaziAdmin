@@ -1,0 +1,5 @@
+query ViewWalletReport($input: ViewWalletReportInput) {
+  ViewWalletReport(input: $input) {
+    data
+  }
+}

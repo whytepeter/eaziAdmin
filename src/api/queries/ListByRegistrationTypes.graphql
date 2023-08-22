@@ -1,0 +1,9 @@
+query ListByRegistrationTypes {
+  ListByRegistrationTypes {
+    success
+    message
+    returnStatus
+    data
+    privileges
+  }
+}

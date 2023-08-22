@@ -1,0 +1,8 @@
+query GetAdminUsers($input: GetAdminUsersInput) {
+  GetAdminUsers(input: $input) {
+    data {
+      count
+      admin
+    }
+  }
+}

@@ -1,0 +1,9 @@
+mutation DeleteRole($input: DeleteARoleInput) {
+  DeleteRole(input: $input) {
+    success
+    message
+    data {
+      role
+    }
+  }
+}

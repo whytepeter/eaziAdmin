@@ -1,0 +1,17 @@
+query LoanContract(
+  $companyId: String!
+  $creatorId: String!
+  $loanId: String
+  $loanInput: CreateLoanV3Input
+) {
+  LoanContract(
+    companyId: $companyId
+    creatorId: $creatorId
+    loanId: $loanId
+    loanInput: $loanInput
+  ) {
+    success
+    data
+    message
+  }
+}

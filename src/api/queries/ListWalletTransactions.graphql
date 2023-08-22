@@ -1,0 +1,13 @@
+query ListWalletTransactions($input: ListWalletTransactionInput) {
+  ListWalletTransactions(input: $input) {
+    _id
+    accountNumber
+    companyId
+    transactionType
+    amount
+    balanceLeft
+    narration
+    createdAt
+    updatedAt
+  }
+}

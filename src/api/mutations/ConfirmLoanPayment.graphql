@@ -1,0 +1,7 @@
+mutation ConfirmLoanPayment($loanId: String!, $amount: Float!, $photoUrl: String!) {
+  ConfirmLoanPayment(loanId: $loanId, amount: $amount, photoUrl: $photoUrl) {
+    success
+    message
+    data
+  }
+}

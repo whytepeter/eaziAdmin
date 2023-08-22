@@ -1,0 +1,15 @@
+query ListSubscriptionsReport {
+  ListSubscriptionsReport {
+    success
+    message
+    data {
+      breakdown {
+        count
+        percentage
+        subscription
+      }
+      total
+    }
+    returnStatus
+  }
+}

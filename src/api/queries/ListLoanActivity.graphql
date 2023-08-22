@@ -1,0 +1,39 @@
+query ListLoanActivity($loanId: String!) {
+  ListLoanActivity(loanId: $loanId) {
+    data {
+      loanId
+      amount
+      type
+      companyId {
+        company {
+          countryCode
+          companySize
+          companyName
+          website
+          industry
+          employerPensionCode
+          tin
+          address
+          country
+          state
+          email
+          bank {
+            currency
+            bankName
+            accountName
+            accountNumber
+            accountResolved
+            bankCode
+            recipientCode
+            bankAccountType
+          }
+          logo
+        }
+        _id
+      }
+      creatorId
+      createdAt
+    }
+    count
+  }
+}

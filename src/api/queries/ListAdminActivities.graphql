@@ -1,0 +1,8 @@
+query ListAdminActivities {
+  ListAdminActivities {
+    data {
+      count
+      activities
+    }
+  }
+}

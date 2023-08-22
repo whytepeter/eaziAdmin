@@ -1,0 +1,7 @@
+mutation AddAdminUser($input: AddAdminUserInput) {
+  AddAdminUser(input: $input) {
+    success
+    message
+    data
+  }
+}

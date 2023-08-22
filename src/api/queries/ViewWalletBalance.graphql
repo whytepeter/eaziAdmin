@@ -1,0 +1,5 @@
+query ViewWalletBalance($input: ViewWalletBalanceInput) {
+  ViewWalletBalance(input: $input) {
+    balance
+  }
+}

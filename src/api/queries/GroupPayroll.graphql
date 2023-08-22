@@ -1,0 +1,11 @@
+query GroupPayroll($input: GroupPayrollInput) {
+  GroupPayroll(input: $input) {
+    success
+    message
+    data {
+      paymentRecords
+      total
+    }
+    returnStatus
+  }
+}

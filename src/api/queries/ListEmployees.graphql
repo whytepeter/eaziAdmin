@@ -1,0 +1,8 @@
+query ListEmployees($companyId: String!, $input: ListEmployeesPagingInput) {
+  ListEmployees(companyId: $companyId, input: $input) {
+    data {
+      count
+      employees
+    }
+  }
+}

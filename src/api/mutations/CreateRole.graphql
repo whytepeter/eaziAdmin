@@ -1,0 +1,10 @@
+mutation CreateRole($input: CreateRoleInput) {
+  CreateRole(input: $input) {
+    success
+    message
+    returnStatus
+    data {
+      role
+    }
+  }
+}

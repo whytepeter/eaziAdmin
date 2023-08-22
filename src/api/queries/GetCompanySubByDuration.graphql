@@ -1,0 +1,8 @@
+query GetCompanySubByDuration($input: GetCompanySubInput) {
+  GetCompanySubByDuration(input: $input) {
+    success
+    message
+    data
+    returnStatus
+  }
+}

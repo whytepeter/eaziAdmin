@@ -1,0 +1,13 @@
+query ListTotalProcessed($input: ListTotalProcessedInput) {
+  ListTotalProcessed(input: $input) {
+    success
+    message
+    data {
+      payrollGraphData
+      payrollFigures
+      complianceGraphData
+      complianceFigures
+    }
+    returnStatus
+  }
+}

@@ -1,0 +1,7 @@
+query GetReconciliationStatement($input: GetReconciliationStatementInput) {
+  GetReconciliationStatement(input: $input) {
+    success
+    message
+    data
+  }
+}

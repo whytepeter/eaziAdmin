@@ -1,0 +1,56 @@
+query GetCompanySummary($companyId: String!) {
+  GetCompanySummary(companyId: $companyId) {
+    success
+    message
+    returnStatus
+    data {
+      branchesCount
+      employeesCount
+      company {
+        _id
+        companyAdmins {
+          _id
+          firstName
+          lastName
+          email
+          pfp
+          phoneNumber
+          countryCode
+          registrationConfirmed
+          twoFactor
+          referralCode
+          referredBy
+          registrationType
+          createdAt
+          updatedAt
+        }
+        registrationType
+        activeAccount
+        company {
+          countryCode
+          companySize
+          companyName
+          website
+          industry
+          employerPensionCode
+          tin
+          address
+          country
+          state
+          email
+          bank {
+            currency
+            bankName
+            accountName
+            accountNumber
+            accountResolved
+            bankCode
+            recipientCode
+            bankAccountType
+          }
+          logo
+        }
+      }
+    }
+  }
+}

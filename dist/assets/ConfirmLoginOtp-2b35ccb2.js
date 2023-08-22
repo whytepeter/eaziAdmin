@@ -1,0 +1,11 @@
+var u={kind:"Document",definitions:[{kind:"OperationDefinition",operation:"mutation",name:{kind:"Name",value:"ConfirmLoginOtp"},variableDefinitions:[{kind:"VariableDefinition",variable:{kind:"Variable",name:{kind:"Name",value:"input"}},type:{kind:"NamedType",name:{kind:"Name",value:"ConfirmOTPInput"}},directives:[]}],directives:[],selectionSet:{kind:"SelectionSet",selections:[{kind:"Field",name:{kind:"Name",value:"ConfirmLoginOtp"},arguments:[{kind:"Argument",name:{kind:"Name",value:"input"},value:{kind:"Variable",name:{kind:"Name",value:"input"}}}],directives:[],selectionSet:{kind:"SelectionSet",selections:[{kind:"Field",name:{kind:"Name",value:"success"},arguments:[],directives:[]},{kind:"Field",name:{kind:"Name",value:"message"},arguments:[],directives:[]},{kind:"Field",name:{kind:"Name",value:"token"},arguments:[],directives:[]},{kind:"Field",name:{kind:"Name",value:"data"},arguments:[],directives:[]},{kind:"Field",name:{kind:"Name",value:"privileges"},arguments:[],directives:[]}]}}]}}],loc:{start:0,end:151}};u.loc.source={body:`mutation ConfirmLoginOtp($input: ConfirmOTPInput) {
+  ConfirmLoginOtp(input: $input) {
+    success
+    message
+    token
+    data
+    privileges
+  }
+}
+`,name:"GraphQL request",locationOffset:{line:1,column:1}};function s(i,n){if(i.kind==="FragmentSpread")n.add(i.name.value);else if(i.kind==="VariableDefinition"){var e=i.type;e.kind==="NamedType"&&n.add(e.name.value)}i.selectionSet&&i.selectionSet.selections.forEach(function(a){s(a,n)}),i.variableDefinitions&&i.variableDefinitions.forEach(function(a){s(a,n)}),i.definitions&&i.definitions.forEach(function(a){s(a,n)})}var f={};(function(){u.definitions.forEach(function(n){if(n.name){var e=new Set;s(n,e),f[n.name.value]=e}})})();function l(i,n){for(var e=0;e<i.definitions.length;e++){var a=i.definitions[e];if(a.name&&a.name.value==n)return a}}function v(i,n){var e={kind:i.kind,definitions:[l(i,n)]};i.hasOwnProperty("loc")&&(e.loc=i.loc);var a=f[n]||new Set,d=new Set,o=new Set;for(a.forEach(function(t){o.add(t)});o.size>0;){var c=o;o=new Set,c.forEach(function(t){if(!d.has(t)){d.add(t);var r=f[t]||new Set;r.forEach(function(m){o.add(m)})}})}return d.forEach(function(t){var r=l(i,t);r&&e.definitions.push(r)}),e}const k=v(u,"ConfirmLoginOtp");export{k as ConfirmLoginOtp,u as default};
+//# sourceMappingURL=ConfirmLoginOtp-2b35ccb2.js.map

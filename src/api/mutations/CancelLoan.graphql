@@ -1,0 +1,7 @@
+mutation CancelLoan($loanId: [String]!, $reason: String!) {
+  CancelLoan(loanId: $loanId, reason: $reason) {
+    success
+    message
+    data
+  }
+}

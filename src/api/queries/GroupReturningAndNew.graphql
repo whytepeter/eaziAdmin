@@ -1,0 +1,13 @@
+query GroupReturningAndNew($input: ListNewAndReturningUsersInput) {
+  GroupReturningAndNew(input: $input) {
+    success
+    message
+    data {
+      newUsers
+      returningUsers
+      newUsersLength
+      returningUsersLength
+    }
+    returnStatus
+  }
+}
