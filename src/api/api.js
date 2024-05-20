@@ -103,33 +103,6 @@ export const logout = async (action) => {
     store.$reset()
 
     router.push('/auth/login')
-
-    // localStorage.removeItem("token");
-    // localStorage.removeItem("companyDetails");
-    // localStorage.removeItem("privilege");
-    // localStorage.removeItem("accountType");
-    // localStorage.removeItem("companyId");
-    // store.$patch({
-    //   isLoggedIn: false,
-    // });
-
-    // store.$reset();
-    // store.commit("set", {
-    //   type: "isLoggedIn",
-    //   data: false,
-    // });
-    // store.commit("set", {
-    //   type: "applicant",
-    //   data: "",
-    // });
-    // store.commit("set", {
-    //   type: "UpdateNewLevel",
-    //   data: {},
-    // });
-
-    // window.localStorage.clear("vuex");
-
-    // router.push("/");
   }
 }
 
@@ -199,9 +172,7 @@ function getService(link) {
 }
 
 let httplink = new HttpLink({
-  // uri: `http://localhost:4000/graphql`,
-  uri: `https://adminservice-bef4ca48917ea5c5.onporter.run/graphql`
-  // uri: `https://eazipay-authentication-vety3kdfea-uc.a.run.app/graphql`, //Old Auth Link
+  uri: process.env.VITE_API_LINK
 })
 const adminHttpLink = errorLink.concat(httplink)
 
@@ -215,57 +186,7 @@ export const API = {
 
 httplink = errorLink.concat(httplink)
 
-// const httplink_emp = new HttpLink({
-//   // uri: `http://localhost:4001/graphql`,
-//   uri: `https://eazipay-employee-v3-vety3kdfea-uc.a.run.app/graphql`
-//   // uri: `https://eazihires-emp.herokuapp.com/graphql`,
-// })
-// const empHttpLink = errorLink.concat(httplink_emp)
 
-// const httplink_payroll = new HttpLink({
-//   // uri: `http://localhost:4002/graphql`,
-//   uri: `https://eazipay-payroll-v3-vety3kdfea-uc.a.run.app/graphql`
-//   // uri: `https://eazihires-payroll.herokuapp.com/graphql`,
-// })
-// const payrollHttpLink = errorLink.concat(httplink_payroll)
-
-// const httplink_performance = new HttpLink({
-//   uri: `https://eazipay-performance-vety3kdfea-uc.a.run.app/graphql`
-//   // uri: `https://eazihires-performance.herokuapp.com/graphql`,
-// })
-// const performanceHttpLink = errorLink.concat(httplink_performance)
-
-// const httpLink_settings = new HttpLink({
-//   // uri: `http://localhost:4004/graphql`,
-//   uri: `https://eazipay-settings-v3-vety3kdfea-ew.a.run.app/graphql`
-// })
-// const settingsHttpLink = errorLink.concat(httpLink_settings)
-
-// const httpLink_bookKeeping = new HttpLink({
-//   uri: `https://eazipay-bookkeeping-vety3kdfea-uc.a.run.app/graphql`
-// })
-// const bookKeepingHttpLink = errorLink.concat(httpLink_bookKeeping)
-
-// const httpLink_loan = new HttpLink({
-//   uri: `https://eazipay-loan-v3-vety3kdfea-uc.a.run.app/graphql`
-// })
-// const loanHttpLink = errorLink.concat(httpLink_loan)
 
 export const graphqlClient = getService(httplink)
 
-// const EMP_API = getService(empHttpLink)
-// const PAYROLL_API = getService(payrollHttpLink)
-// const PERFORMANCE_API = getService(performanceHttpLink)
-// const SETTINGS_API = getService(settingsHttpLink)
-// const BOOKKEEPING_API = getService(bookKeepingHttpLink)
-// const LOAN_API = getService(loanHttpLink)
-
-// export const API = {
-//   AUTH_API,
-//   EMP_API,
-//   PAYROLL_API,
-//   PERFORMANCE_API,
-//   SETTINGS_API,
-//   BOOKKEEPING_API,
-//   LOAN_API
-// }
